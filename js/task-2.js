@@ -1,5 +1,15 @@
 "use strict;"
-
+function calcAverageCalories(days){
+  if (days.length === 0){
+    return 0;
+  }
+  let titlesCaloris = 0;
+  for (const day of days){
+    titlesCaloris += day.calories;
+  }
+  const averageCalories = titlesCaloris / days.length;
+  return averageCalories;
+}
 
 
 
@@ -27,6 +37,7 @@ console.log(
     ])
   ); // 2270
   
-  console.log(
-    calcAverageCalories([])
-  ); // 0
+  
+console.log(
+  calcAverageCalories([])
+); // 0
