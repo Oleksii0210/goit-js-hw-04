@@ -3,10 +3,11 @@ function isEnoughCapacity(products, containerSize){
   const titles = [];
    for (const product of products){
    if (titles >= containerSize){
-    return 'true';
-   } else 
-   return 'false';
+    return true;
+   } else {
+   return false;
   }
+}
 }
 
  
